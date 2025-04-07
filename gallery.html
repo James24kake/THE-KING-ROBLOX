@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24k_ake Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold-color: #ffcc00;
+            --dark-bg: #0a0a0a;
+            --section-padding: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            line-height: 1.6;
+        }
+
+        .gallery-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+        }
+
+        .gallery-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--gold-color);
+        }
+
+        .gallery-header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .gallery-section {
+            padding: var(--section-padding) 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 120px;
+            gap: 60px;
+        }
+
+        .gallery-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .gallery-image {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .gallery-content h2 {
+            font-size: 2.5rem;
+            color: var(--gold-color);
+            margin-bottom: 20px;
+        }
+
+        .gallery-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gold-color);
+            color: black;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
+        }
+
+        @media (max-width: 968px) {
+            .gallery-item {
+                flex-direction: column;
+                margin-bottom: 80px;
+                gap: 40px;
+            }
+
+            .gallery-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .gallery-content {
+                text-align: center;
+            }
+
+            .gallery-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-header">
+        <h1>24k_ake's Gallery</h1>
+        <p>Explore my world through these captivating moments and experiences</p>
+    </div>
+
+    <div class="gallery-section">
+        <div class="gallery-item">
+            <div class="gallery-image">
+                <img src="https://i.postimg.cc/tgy86Pg6/IMG-0014.jpg" alt="Gaming Setup">
+            </div>
+            <div class="gallery-content">
+                <h2>Ultimate Gaming Paradise</h2>
+                <p>Step into my gaming sanctuary where every detail is crafted for the perfect gaming experience. This professional setup features state-of-the-art equipment, customized lighting, and an atmosphere that truly embodies the spirit of modern gaming. It's where epic victories are achieved and unforgettable moments are created.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image">
+                <img src="https://i.postimg.cc/y63pRGn9/IMG-0013.jpg" alt="Gaming Achievement">
+            </div>
+            <div class="gallery-content">
+                <h2>Moments of Glory</h2>
+                <p>Every screenshot tells a story of triumph and dedication. This capture represents countless hours of practice, strategy, and determination. It's not just about the game - it's about the journey, the community, and the passion that drives us to achieve greatness in the virtual realm.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image">
+                <img src="https://i.postimg.cc/qMknrhtR/IMG-0015.jpg" alt="Gaming Highlights">
+            </div>
+            <div class="gallery-content">
+                <h2>Epic Adventures Await</h2>
+                <p>Dive into a world where every pixel holds potential for adventure. This snapshot captures the essence of what makes gaming truly special - the immersive environments, the challenging objectives, and the thrill of exploration. Join me on this incredible journey through digital landscapes.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <div class="gallery-image">
+                <img src="https://i.postimg.cc/t469mDXV/IMG-0017.jpg" alt="Gaming Excellence">
+            </div>
+            <div class="gallery-content">
+                <h2>Peak Performance</h2>
+                <p>Witness the culmination of skill, strategy, and dedication. This image represents the heights of gaming achievement, where precision meets passion. It's a testament to the endless possibilities that await in the gaming world, and the incredible experiences we can create together.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
+</body>
+</html> 
